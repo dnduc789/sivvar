@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_app_color">#ffcf4c29</color>
+    
+    <color name="error_message">#ff0000</color>
+    <color name="notify_message">#00ff00</color>
+    
+    <color name="main_app_color_orange">#f9690e</color>
+	<color name="main_app_color_green">#22916b</color>
+	<color name="main_app_color_background">#262a2e</color>    
+    
+    <color name="text_selected">#f9690e</color>
+    <color name="text_over">#ffb9c4cb</color>
+    <color name="text_default">#ff5b656f</color>
+    <color name="text_disabled">#ffa6b3bf</color>
+    <color name="text_header">#ff7e8e9e</color>
+    
+    <color name="text_switch_selected">#f9690e</color>
+    <color name="text_switch">#ffffff</color>
+    
+    <color name="text_button">#ffffff</color>
+    <color name="text_button_disabled">#ffa6b3bf</color>
+    <color name="text_button_selected">#f9690e</color>
+    <color name="text_button_over">#f9690e</color>
+    
+    <color name="numpad_background_bottom">#ffe4edf2</color>
+    <color name="numpad_background_dialer">#ffd8d8d8</color>
+    <color name="numpad_background_top">#ffb1bdc3</color>
+    
+    <color name="missed_calls_background">#ffcf4c29</color>
+    
+    <color name="transparent">#00000000</color>
+    
+    <color name="landscape_background">#CCCCCC</color>
+    
+    <color name="text_contrast">#ff000000</color> <!-- If background is white, set to black, else set to white -->
+</resources>

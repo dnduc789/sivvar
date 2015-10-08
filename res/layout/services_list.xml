@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_service_wrap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BEBEBE"
+        android:orientation="horizontal"
+        android:weightSum="10" 
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:orientation="vertical"
+            android:weightSum="10" >
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7" />
+            
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8">
+                <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:background="@color/main_app_color_orange"
+	                android:weightSum="10" >
+	
+					<View
+	                    android:layout_width="0dp"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="0.2" />
+	                
+	                <TextView
+	                    android:id="@+id/service_title"
+	                    android:layout_width="0dp"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="9.6"
+	                    android:gravity="center"
+	                    android:text="@string/services_industry_name_title"
+	                    android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	                <View
+	                    android:layout_width="0dp"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="0.2" />
+	            </LinearLayout>
+	            <ImageView
+                    android:id="@+id/goback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/backarrow"/>
+            </RelativeLayout>
+            
+
+            <RelativeLayout
+                android:id="@+id/service1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+            	android:layout_weight="8.0"
+            	android:background="@drawable/border_service">
+                    
+                    <GridView
+					    android:id="@+id/industry_service_wrapper"
+					    android:layout_width="match_parent"
+					    android:layout_height="match_parent"
+					    android:layout_marginLeft="5dp"
+					    android:layout_marginRight="5dp"
+					    android:numColumns="auto_fit"
+					    android:columnWidth="40dp"
+					    android:horizontalSpacing="10dp"
+					    android:verticalSpacing="10dp"
+					    android:gravity="center"
+					    android:stretchMode="spacingWidth" >
+					
+					</GridView>
+					
+                    <TextView
+						android:id="@+id/noIndustry"
+						android:visibility="gone"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:gravity="center"
+						android:text="@string/no_industry"
+						android:textColor="@drawable/text_color"
+						android:textAppearance="@android:style/TextAppearance.Large"/>
+                    
+                    <TextView
+						android:id="@+id/noIndustryService"
+						android:visibility="gone"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:gravity="center"
+						android:text="@string/no_industry_service"
+						android:textColor="@drawable/text_color"
+						android:textAppearance="@android:style/TextAppearance.Large"/>
+                    
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_favourite_wrap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BEBEBE"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:orientation="vertical"
+            android:weightSum="10" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8.6"
+                android:background="@drawable/border_service"
+                android:orientation="vertical"
+                android:weightSum="8" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8"
+                    android:weightSum="10" >
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="9.6"
+                        android:background="@drawable/button_favourites"
+                        android:gravity="center"
+                        android:text="@string/services_favourites_title"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#09462B" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6.2" >
+
+                    <GridView
+					    android:id="@+id/favourite_wrapper"
+					    android:layout_width="match_parent"
+					    android:layout_height="match_parent"
+					    android:layout_marginLeft="5dp"
+					    android:layout_marginRight="5dp"
+					    android:numColumns="auto_fit"
+					    android:columnWidth="40dp"
+					    android:horizontalSpacing="10dp"
+					    android:verticalSpacing="10dp"
+					    android:gravity="center"
+					    android:stretchMode="spacingWidth" >
+					
+					</GridView>
+					
+                    <TextView
+						android:id="@+id/noFavouriteService"
+						android:visibility="gone"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:gravity="center"
+						android:text="@string/no_favourite_service"
+						android:textColor="@drawable/text_color"
+						android:textAppearance="@android:style/TextAppearance.Large"/>
+                    
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8"
+                    android:weightSum="10" >
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2" />
+
+                    <Button
+                        android:id="@+id/industries_button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="9.6"
+                        android:background="@drawable/button_industries_animation"
+                        android:gravity="center"
+                        android:text="@string/services_industries_button_title"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#09462B" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+</LinearLayout>

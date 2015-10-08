@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:gravity="center">
+
+    <View android:layout_weight="10" android:layout_width="0dp" android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:orientation="horizontal"
+	    android:layout_weight="25"
+	    android:weightSum="7">
+	    <View
+	        android:layout_width="0dp"
+	        android:layout_height="0dp"
+	        android:layout_weight="2"/>
+	    <ImageView
+	        android:contentDescription="@string/content_description_welcome"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="3"
+	        android:src="@drawable/about_sivvar_logo" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/text_default"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_slogan"
+        android:textColor="@color/text_contrast"
+        android:textSize="15dp"
+        android:textStyle="bold|italic" />
+	<View android:layout_weight="5" android:layout_width="0dp" android:layout_height="0dp" />
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_copyright_year"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:textColor="@color/text_contrast"
+        android:id="@+id/copyrightYear"/>
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_copyright_entity"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:textColor="@color/text_contrast"
+        android:id="@+id/copyrightEntity"/>
+    <View android:layout_weight="13" android:layout_width="0dp" android:layout_height="0dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_powered_by"
+        android:autoLink="web"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/text_contrast"
+        android:id="@+id/AboutLink"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:orientation="horizontal"
+	    android:layout_weight="10"
+	    android:weightSum="8">
+	    <View
+	        android:layout_width="0dp"
+	        android:layout_height="0dp"
+	        android:layout_weight="2"/>
+	    <ImageView
+	        android:contentDescription="@string/content_description_welcome"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="4"
+	        android:src="@drawable/codec_systems_logo" />
+	    <View
+	        android:layout_width="0dp"
+	        android:layout_height="0dp"
+	        android:layout_weight="2"/>
+    </LinearLayout>
+
+    <View android:layout_weight="10" android:layout_width="0dp" android:layout_height="0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_link"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/main_app_color_green"
+        android:id="@+id/aboutLink"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp"
+        android:visibility="gone">
+
+		<Button
+       		android:id="@+id/send_log"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+       		android:text="@string/menu_send_log"/>
+
+        <Button
+            android:id="@+id/reset_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_reset_log"
+            />
+
+        <Button android:id="@+id/exit"
+        	android:gravity="center"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/menu_exit"/>
+
+    </LinearLayout>
+
+</LinearLayout>

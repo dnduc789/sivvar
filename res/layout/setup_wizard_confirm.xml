@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+    <ImageView 
+	    android:paddingTop="40dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/setup_title_assistant"/>
+    
+    <TextView 
+	    android:paddingTop="10dp"
+	    android:gravity="center"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/setup_error"
+        android:textColor="#ffff0000"/>
+    
+    <TextView 
+        android:id="@+id/notify_message"
+	    android:paddingTop="40dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/setup_validate_account"
+	    android:textColor="@android:color/black" />
+    
+    <EditText 
+	        android:id="@+id/setup_code_confirm"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:hint="@string/setup_confirm_code_hint"
+		    android:textColor="@android:color/black" />
+    
+    <RelativeLayout
+    	android:layout_marginTop="20dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+           
+        <ImageView
+            android:id="@+id/setup_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/button"
+	    	android:layout_centerInParent="true" />
+        
+         <TextView 
+            android:id="@+id/setup_check_text"
+	    	android:layout_centerInParent="true"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/setup_check_account_validation"
+		    android:textColor="@color/text_disabled" />
+       
+       </RelativeLayout>
+
+</LinearLayout>

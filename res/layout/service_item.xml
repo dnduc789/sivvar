@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/service_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="2"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="5" >
+	<View 
+	    android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+        <com.sivvar.ui.grid.SquareImageView
+	        android:id="@+id/item_image"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" />
+        <ProgressBar
+            android:id="@+id/image_loading"
+            android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_gravity="center"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="MONIE HONIE"
+        android:textColor="#FFF"
+        android:textSize="9sp" />
+
+</LinearLayout>

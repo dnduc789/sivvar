@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <LinearLayout
+        android:id="@+id/addtext"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.8"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:background="@drawable/bg"
+        android:weightSum="10" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8.6"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:weightSum="9" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6.1"
+                android:background="@drawable/dialer_textaddress"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="9" >
+
+                <org.linphone.ui.AddressText
+                    android:id="@+id/Adress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7.5"
+                    android:background="@drawable/dialer_address_background"
+                    android:gravity="left|center_vertical"
+                    android:hint="@string/addressHint"
+                    android:paddingLeft="10dp"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/main_app_color_green" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.15"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="9" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5"
+                        android:background="#ACACAA" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:background="#ACACAA"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:weightSum="9" >
+
+                    <Button
+                        android:id="@+id/PasswordVisible"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/hide"
+                        android:tag="0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    
+    <org.linphone.ui.Numpad
+        android:id="@+id/Dialer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:contentDescription="@string/content_description_numpad" />
+
+    <LinearLayout
+        android:id="@+id/controls"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:background="#00ff00"
+        android:weightSum="3"
+        android:orientation="horizontal"
+         >
+
+        <ImageView
+            android:id="@+id/addContact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_add_contact"
+            android:scaleType="fitXY"
+            android:src="@drawable/add_contact"
+            android:visibility="gone" />
+        
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_add_contact"
+            android:scaleType="fitXY"
+            android:src="@drawable/button_background" />
+        
+
+        <org.linphone.ui.CallButton
+            android:id="@+id/Call"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_call"
+            android:scaleType="fitXY"
+            android:src="@drawable/call" />
+
+        <org.linphone.ui.EraseButton
+            android:id="@+id/Erase"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_backspace"
+            android:scaleType="fitXY"
+            android:src="@drawable/backspace"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>
